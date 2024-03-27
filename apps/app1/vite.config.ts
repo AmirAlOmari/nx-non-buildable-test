@@ -8,7 +8,7 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../node_modules/.vite/app1',
+  cacheDir: '../../node_modules/.vite/app1',
 
   server: {
     port: 3000,
@@ -58,7 +58,7 @@ export default defineConfig({
   // },
 
   build: {
-    outDir: '../dist/app1',
+    outDir: '../../dist/apps/app1',
     reportCompressedSize: true,
     emptyOutDir: true,
     sourcemap: true,

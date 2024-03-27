@@ -7,7 +7,7 @@ export class AppService {
 
   getData() {
     return {
-      message: 'Hello API',
+      message: '1 + Hello API',
       libServiceLuxonString: this.libService.getLuxonString(),
     };
   }

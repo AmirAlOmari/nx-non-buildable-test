@@ -9,6 +9,6 @@ export class LibService {
   }
 
   public getLuxonString(): string {
-    return `1 + ${DateTime.now().toISO()}`;
+    return `3 + ${DateTime.now().toISO()}`;
   }
 }

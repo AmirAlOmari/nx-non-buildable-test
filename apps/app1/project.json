@@ -1,7 +1,7 @@
 {
   "name": "app1",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "app1/src",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/app1/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,7 +9,7 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/app1",
-        "tsConfig": "app1/tsconfig.app.json",
+        "tsConfig": "apps/app1/tsconfig.app.json",
         "generatePackageJson": true
       }
     },
