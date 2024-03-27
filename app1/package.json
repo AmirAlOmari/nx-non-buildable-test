@@ -1,5 +1,8 @@
 {
   "name": "app1",
   "main": "main.js",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@swc/helpers": "~0.5.2"
+  }
 }

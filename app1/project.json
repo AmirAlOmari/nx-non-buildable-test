@@ -9,7 +9,6 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/app1",
-        "buildLibsFromSource": false,
         "tsConfig": "app1/tsconfig.app.json",
         "generatePackageJson": true
       }
@@ -17,8 +16,7 @@
     "serve": {
       "executor": "@nx/vite:dev-server",
       "options": {
-        "buildTarget": "app1:build",
-        "buildLibsFromSource": false
+        "buildTarget": "app1:build"
       }
     }
   },
