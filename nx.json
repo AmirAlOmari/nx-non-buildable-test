@@ -21,5 +21,9 @@
         "serveStaticTargetName": "serve-static"
       }
     }
-  ]
+  ],
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "libs"
+  }
 }
