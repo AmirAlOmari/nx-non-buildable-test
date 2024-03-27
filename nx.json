@@ -46,9 +46,5 @@
         "targetName": "test"
       }
     }
-  ],
-  "workspaceLayout": {
-    "appsDir": "apps",
-    "libsDir": "libs"
-  }
+  ]
 }

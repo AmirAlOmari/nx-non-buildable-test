@@ -2,8 +2,8 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "../dist/out-tsc",
-    "module": "commonjs",
-    "types": ["node"],
+    "module": "ESNext",
+    "types": ["node", "vite/client"],
     "emitDecoratorMetadata": true,
     "target": "es2021",
     "strictNullChecks": true,

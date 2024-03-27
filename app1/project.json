@@ -4,19 +4,21 @@
   "sourceRoot": "app1/src",
   "projectType": "application",
   "targets": {
-    "serve": {
-      "executor": "@nx/js:node",
-      "defaultConfiguration": "development",
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
       "options": {
-        "buildTarget": "app1:build"
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "app1:build:development"
-        },
-        "production": {
-          "buildTarget": "app1:build:production"
-        }
+        "outputPath": "dist/apps/app1",
+        "buildLibsFromSource": false,
+        "tsConfig": "app1/tsconfig.app.json",
+        "generatePackageJson": true
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "options": {
+        "buildTarget": "app1:build",
+        "buildLibsFromSource": false
       }
     }
   },
