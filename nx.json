@@ -2,8 +2,24 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
-    "production": ["default"],
+    "production": [
+      "default",
+      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+      "!{projectRoot}/tsconfig.spec.json"
+    ],
     "sharedGlobals": []
   },
-  "nxCloudAccessToken": "ZjRmZGM3YjItOGUxNy00ZDFlLTlkMTktYmFmOGJhNzYwNmRjfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "ZjRmZGM3YjItOGUxNy00ZDFlLTlkMTktYmFmOGJhNzYwNmRjfHJlYWQtd3JpdGU=",
+  "plugins": [
+    {
+      "plugin": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "previewTargetName": "preview",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "serveStaticTargetName": "serve-static"
+      }
+    }
+  ]
 }
